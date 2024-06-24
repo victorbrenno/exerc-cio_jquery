@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/*apresentação*/
+
+body {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: #c6d316;
+}
+
+#apresentacao {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 50%;
+}
+
+.text-apresentacao {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 100px;
+    color: #111827;
+    z-index: 2;
+}
+
+.title-apresentacao {
+    text-align: center;
+    font-size: 3rem;
+    padding: 0 20px;
+}
+
+.subtitle-apresentacao {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0 20px;
+}
+
+#apresentacao p {
+    display: flex;
+    text-align: start;
+    justify-content: flex-start;
+    margin-top: 50px;
+    margin-right: 100px;
+    padding: 18px;
+    max-width: 450px;
+    color: #111827c2;
+}
+
+.img-apresentacao {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.img-apresentacao img {
+    height: auto;
+    max-width: 100%;
+    max-height: 100vh;
+    min-width: 300px;
+    min-height: 800px;
+    z-index: 1;
+}
+
+/*registro*/
+
+#todo-registre {
+    position: absolute;
+    background-color: rgb(89, 0, 161);
+    width: 400px;
+    height: 360px;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 300px;
+    min-height: 250px;
+    margin-top: 230px;
+    margin-left: 350px;
+    border-radius: 20px;
+    z-index: 2;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+#todo-registre h1 {
+    font-size: 1.5rem;
+    color: #111827;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 18px;
+}
+
+#todo-registre .todo-form {
+    display: flex;
+    align-items: flex-end;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 20px;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#todo-registre input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.0rem;
+    height: 60px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 0 18px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+#todo-registre textarea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.0rem;
+    height: 80px;
+    height: 100px;
+    resize: none;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 5px 18px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    margin-bottom: 18px;
+}
+
+#todo-registre ::placeholder{
+text-indent: 2%;
+margin: 5px;
+padding: 5px;
+display: flex;
+text-align: start;
+}
+
+#todo-registre .todo-form label {
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 7px;
+}
+
+#hora {
+    width: 100px;
+    height: 20px; 
+    text-align: center;
+}
+
+#hora::placeholder {
+    text-align: center;
+}
+
+#todo-registre button {
+    width: 60px;
+    min-width: 20px;
+    max-width: 100px;
+    height: 60px;
+    min-height: 20px;
+    max-height: 100px;
+    margin: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 30px;
+    padding: 10px 20px;
+    margin-bottom: 40px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+#todo-registre .todo-btn-adicionar {
+        color: #111827;
+        background-color: #15754d9c;
+}
+
+#todo-registre #todo-btn-cancelar {
+        color: #111827;
+        background-color: #75151581;
+}
+    
+#todo-registre .todo-btn-adicionar:hover {
+        color: #111827;
+        background-color: #15754d;
+}
+
+#todo-registre #todo-btn-cancelar:hover {
+        color: #111827;
+        background-color: #751515;
+}
+
+/*Button Open registre*/
+
+#btn-nova-tarefa button {
+        width: 100px;
+        min-width: 20px;
+        max-width: 200px;
+        height: 70px;
+        min-height: 20px;
+        max-height: 70px;
+        margin: 10px;
+        border-radius: 100px;
+        border: none;
+        font-size: 30px;
+        padding: 10px 20px;
+        margin-top: 20px;
+        margin-right: 10px;
+        box-shadow:rgba(0, 0, 0, 0.7);
+        cursor: pointer;
+        font-size: 1.2rem;
+        align-items: center;
+        background-color: rgba(255, 25, 0, 0.836);
+}
+
+#btn-nova-tarefa button i {
+    font-size: 2.5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #111827;
+}
+
+#btn-nova-tarefa button:hover{
+    background-color: rgb(80, 54, 231);
+    transition: 0.1s;
+}
+
+.concluido {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* todo list*/
+
+#lista-de-tarefa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 50%;
+    width: 500px;
+    max-height: 80%;
+    height: 600px;
+    right: 500px;
+    margin: 100px 250px 70px 10px;
+    background-color: #F9EFDB;
+    border-radius: 20px;
+    padding: 18px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+#cabecario-lista {
+    width: 100%;
+}
+
+#cabecario-lista h1 {
+    text-align: right;
+    margin: 20px;
+    border-bottom: 2px solid rgb(218, 215, 215);
+    color: #111827;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.lista {
+    color: #111827;
+}
+
+.lista ul {
+    list-style-type: none;
+    width: 100%;
+}
+
+.lista li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.lista .task,
+.lista .time,
+.lista .description {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.lista .task {
+    flex: 2;
+}
+
+.lista li h3 {
+    margin: 10px;
+}
+
+.lista button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.lista button i {
+    pointer-events: none;
+}
+
+.lista button .fa-solid {
+    font-size: 25px;
+}
+
+.lista li.concluido {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.lista .finish-todo:hover {
+    color: #15754d;
+}
+
+.lista .remove-todo:hover {
+    color: #751515;
+}
